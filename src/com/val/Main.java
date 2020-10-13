@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		calculateCharges(9);
+		calculateCharges(23);
 
 	}
 
@@ -17,12 +17,12 @@ public class Main {
 
 
 		if (totalHours <= 3) {
-			System.out.println("Total fee for " + totalHours + " hours is: " + minimumFee);
-		} else if (totalHours > 3 && totalHours < 24) {
+			System.out.println("Total fee for " + totalHours + " hours is: " + minimumFee + " euros.");
+		} else if (totalHours > 3 && totalHours < 19) {
 			totalFee = minimumFee + ((totalHours - 3) * additionalFee);
-			System.out.println("Total fee for " + totalHours + " hours is: " + totalFee);
+			System.out.println("Total fee for " + totalHours + " hours is: " + totalFee + " euros.");
 		} else {
-			System.out.println("Total fee for " + totalHours + " hours is: " + maxCharge);
+			System.out.println("Total fee for " + totalHours + " hours is: " + maxCharge + " euros.");
 		}
 
 	}
